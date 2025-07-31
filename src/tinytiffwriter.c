@@ -60,9 +60,10 @@
 #  define TinyTIFFWriter_POSTYPE fpos_t
 #endif // TINYTIFF_USE_WINAPI_FOR_FILEIO
 
-
-
+#ifndef TINYTIFFWRITER_DESCRIPTION_SIZE
 #define TINYTIFFWRITER_DESCRIPTION_SIZE 1024
+#endif
+
 #define TIFF_LAST_ERROR_SIZE 1024
 
 int TinyTIFFWriter_getMaxDescriptionTextSize() {
